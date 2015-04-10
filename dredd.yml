@@ -1,7 +1,7 @@
 dry-run: null
 hookfiles: null
 sandbox: false
-server: rails server
+server: bundle exec rails server
 server-wait: 3
 init: false
 custom:
