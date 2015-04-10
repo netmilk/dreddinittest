@@ -1,0 +1,21 @@
+<%= form_for(@first_aid) do |f| %>
+  <% if @first_aid.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@first_aid.errors.count, "error") %> prohibited this first_aid from being saved:</h2>
+
+      <ul>
+      <% @first_aid.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :urgency %><br>
+    <%= f.text_field :urgency %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

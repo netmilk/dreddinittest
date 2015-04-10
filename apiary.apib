@@ -3,11 +3,20 @@ HOST: http://polls.apiblueprint.org/
 
 # Life saving API
 
-# First aid [/first_aid]
+# First aid [/first_aids]
 
 # Request first aid [POST]
 
-+ Response 200
++ Request (application/json)
 
-        {"salvation": true}
+  + Headers
 
+              Accept: application/json
+
+  + Body
+
+              {"urgency": "top"}
+
++ Response 201 (application/json; charset=utf-8)
+
+              {"urgency": "top"}
