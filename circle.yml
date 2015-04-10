@@ -1,6 +1,0 @@
-dependencies:
-  pre:
-    - npm install -g git://github.com/apiaryio/dredd#netmilk/improove-dx
-test:
-  pre:
-    - dredd
