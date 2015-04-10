@@ -1,4 +1,4 @@
 before_install:
-  - git://github.com/apiaryio/dredd#netmilk/improove-dx
+  - npm install -g git://github.com/apiaryio/dredd#netmilk/improove-dx
 before_script:
   - dredd
